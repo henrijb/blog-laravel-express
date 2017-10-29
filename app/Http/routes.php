@@ -15,4 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('blog', 'ConteudoController@index');
+Route::get('ola/{nome}', 'TestController@index');
+Route::get('notas', 'TestController@notas');
+
+Route::get('blog', 'PostsController@index');
